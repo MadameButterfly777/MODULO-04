@@ -85,9 +85,8 @@ function App() {
       <div style={styles.wrapper}>
         <h1>Gestion de Usuarios</h1>
         
-        {/* <List title="Todos los usuarios" users={users} />
-        <hr />
-        <List title="Usuarios activos" users={ActiveUsers} /> */}
+         <List title="Todos los usuarios" users={users} />
+        
       </div>
     </>
   );
