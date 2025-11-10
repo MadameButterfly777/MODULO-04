@@ -1,0 +1,24 @@
+const title = {
+    color: "green",
+}
+const coste = 40
+
+const CosteAlquiler = ({night}) => {
+    
+    let costeTotal = night * coste
+
+    if(night >= 3 && night < 7){
+        costeTotal -= 20;
+    }else if (night >= 7){
+        costeTotal -= 50;
+    }
+  return (
+    <div>
+        <h3>Coste alquiler de coche</h3>
+        <p style={title} >El coste de alquiler por coche por {night} noche es </p>
+        <span style={{color: "red"}}> {costeTotal}</span>
+    </div>
+  )
+}
+
+export default CosteAlquiler
